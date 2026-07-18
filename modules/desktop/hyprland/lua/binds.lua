@@ -1,14 +1,19 @@
 -- Resize windows
-hl.bind(mainMod .. " + SHIFT + right", hl.dsp.window.resize({ x = 30, y = 0 }), { repeating = true })
-hl.bind(mainMod .. " + SHIFT + left", hl.dsp.window.resize({ x = -30, y = 0 }), { repeating = true })
-hl.bind(mainMod .. " + SHIFT + up", hl.dsp.window.resize({ x = 0, y = -30 }), { repeating = true })
-hl.bind(mainMod .. " + SHIFT + down", hl.dsp.window.resize({ x = 0, y = 30 }), { repeating = true })
+hl.bind(mainMod .. " + SHIFT + l",
+	hl.dsp.window.resize({ x = 30, y = 0, relative = true }),
+	{ repeating = true })
 
--- Resize windows with hjkl keys
-hl.bind(mainMod .. " + SHIFT + l", hl.dsp.window.resize({ x = 30, y = 0 }), { repeating = true })
-hl.bind(mainMod .. " + SHIFT + h", hl.dsp.window.resize({ x = -30, y = 0 }), { repeating = true })
-hl.bind(mainMod .. " + SHIFT + k", hl.dsp.window.resize({ x = 0, y = -30 }), { repeating = true })
-hl.bind(mainMod .. " + SHIFT + j", hl.dsp.window.resize({ x = 0, y = 30 }), { repeating = true })
+hl.bind(mainMod .. " + SHIFT + h",
+	hl.dsp.window.resize({ x = -30, y = 0, relative = true }),
+	{ repeating = true })
+
+hl.bind(mainMod .. " + SHIFT + k",
+	hl.dsp.window.resize({ x = 0, y = -30, relative = true }),
+	{ repeating = true })
+
+hl.bind(mainMod .. " + SHIFT + j",
+	hl.dsp.window.resize({ x = 0, y = 30, relative = true }),
+	{ repeating = true })
 
 -- Move/Resize windows with mainMod + LMB/RMB and dragging
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
@@ -67,7 +72,7 @@ hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(term))
 hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(term))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManagerScript .. " " .. fileManager))
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd(editor))
-hl.bind(mainMod .. " + F", hl.dsp.exec_cmd(browser))
+hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("spotify"))
 hl.bind(mainMod .. " + SHIFT + Y", hl.dsp.exec_cmd("youtube-music"))
 hl.bind("CONTROL + ALT + DELETE", hl.dsp.exec_cmd(term .. " -e btop")) -- System Monitor

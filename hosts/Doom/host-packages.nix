@@ -7,6 +7,7 @@
     proton-vpn # VPN
     github-desktop
     tree-sitter
+    localsend
     # pokego # Overlayed
 
     # All-in-one front-end for emulators 
