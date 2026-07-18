@@ -11,6 +11,8 @@
     chromium
     gearlever
     appimage-run
+    octaveFull
+    flatpak
     # pokego # Overlayed
 
     # All-in-one front-end for emulators 
