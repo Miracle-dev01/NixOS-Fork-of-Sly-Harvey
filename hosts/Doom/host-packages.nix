@@ -8,6 +8,9 @@
     github-desktop
     tree-sitter
     localsend
+    chromium
+    gearlever
+    appimage-run
     # pokego # Overlayed
 
     # All-in-one front-end for emulators 
