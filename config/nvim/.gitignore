@@ -1,0 +1,14 @@
+```text
+# Ignore plugin manager data
+.lazy/
+plugin/
+mason/
+
+# Ignore local session files and temporary backups
+*.swp
+*.bak
+session.vim
+
+# Ignore compiled files or caches
+__pycache__/
+*.pyc

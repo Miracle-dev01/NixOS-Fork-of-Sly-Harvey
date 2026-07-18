@@ -18,7 +18,7 @@ in
   home-manager.sharedModules = [
     (_: {
       programs.neovim.enable = true;
-      xdg.configFile."nvim".source = inputs.neovim;
+      xdg.configFile."nvim".source = ../../../../config/nvim;
       xdg.desktopEntries = {
         "nvim" = {
           name = "Neovim wrapper";
