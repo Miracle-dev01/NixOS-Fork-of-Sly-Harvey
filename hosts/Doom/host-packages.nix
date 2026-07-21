@@ -13,7 +13,9 @@
     appimage-run
     octaveFull
     flatpak
-    # pokego # Overlayed
+    onlyoffice-desktopeditors
+    pokego # Overlayed
+    libreoffice
 
     # All-in-one front-end for emulators 
     (retroarch.withCores (cores: with cores; [
